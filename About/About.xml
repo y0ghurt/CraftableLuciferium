@@ -4,6 +4,7 @@
   <name>Craftable Luciferium</name>
   <author>Y0ghurt</author>
   <targetVersion>0.18.1722</targetVersion>
+  <url>https://github.com/y0ghurt/CraftableLuciferium</url>
   <description>
 &lt;b&gt;V1.01&lt;/b&gt;
 This mod makes the drug Luciferium craftable. Access was always the biggest deterrent for me when deciding whether to administer Luciferium. In order to not completely throw off game balance, the crafting cost is fairly high per unit.
@@ -22,6 +23,7 @@ This mod makes the drug Luciferium craftable. Access was always the biggest dete
  - Improved mod description (you're reading it).
  - Removed some random comments left behind from earlier.
  - Unfinished luciferium now looks like luciferium rather than an unfinished component.
+ - Mod is now available on GitHub.
  - &lt;i&gt;Cried because I am now hooked on modding.&lt;/i&gt;
   </description>
 </ModMetaData>
