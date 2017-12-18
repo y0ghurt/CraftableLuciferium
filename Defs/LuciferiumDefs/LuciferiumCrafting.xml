@@ -19,6 +19,16 @@
     <researchViewY>1.5</researchViewY>
   </ResearchProjectDef>
   
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedLuciferium</defName>
+    <label>unfinished luciferium</label>
+    <graphicData>
+      <texPath>Things/Item/Drug/Luciferium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stuffCategories />
+  </ThingDef>
+  
   <RecipeDef>
     <defName>MakeLuciferium</defName>
     <label>make luciferium</label>
@@ -28,7 +38,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>9000</workAmount>
-    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedLuciferium</unfinishedThingDef>
 	<researchPrerequisite>LuciferiumCrafting</researchPrerequisite>
 	<recipeUsers>
 		<li>DrugLab</li>
