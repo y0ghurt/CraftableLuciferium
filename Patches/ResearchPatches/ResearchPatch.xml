@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ComponentAssembly"]/researchViewX</xpath>
+    <value>
+	  <researchViewX>9</researchViewX>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ComponentAssembly"]/researchViewY</xpath>
+    <value>
+	  <researchViewY>2.9</researchViewY>
+	</value>
+  </Operation>
+</Patch>
