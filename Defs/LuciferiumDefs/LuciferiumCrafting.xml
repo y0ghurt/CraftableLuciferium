@@ -4,7 +4,7 @@
   <ResearchProjectDef>
     <defName>LuciferiumCrafting</defName>
     <label>luciferium crafting</label>
-	<description>Allows you to create Luciferium at the drug lab.</description>
+	<description>Allows you to create Luciferium at the Machining Table.</description>
 	<baseCost>6000</baseCost>
 	<techLevel>Industrial</techLevel>
     <prerequisites>
@@ -41,7 +41,7 @@
     <unfinishedThingDef>UnfinishedLuciferium</unfinishedThingDef>
 	<researchPrerequisite>LuciferiumCrafting</researchPrerequisite>
 	<recipeUsers>
-		<li>DrugLab</li>
+		<li>TableMachining</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -50,7 +50,7 @@
             <li>AdvancedComponent</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -58,7 +58,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -66,7 +66,7 @@
             <li>Gold</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>0.5</count>
       </li>
       <li>
         <filter>
@@ -74,7 +74,7 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>0.5</count>
       </li>
     </ingredients>
     <products>
