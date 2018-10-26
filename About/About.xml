@@ -3,27 +3,32 @@
 <ModMetaData>
   <name>Craftable Luciferium</name>
   <author>Y0ghurt</author>
-  <targetVersion>0.18.1722</targetVersion>
+  <targetVersion>1.0.0</targetVersion>
   <url>https://github.com/y0ghurt/CraftableLuciferium</url>
   <description>
-&lt;b&gt;V1.01&lt;/b&gt;
+&lt;b&gt;V1.02&lt;/b&gt;
 This mod makes the drug Luciferium craftable. Access was always the biggest deterrent for me when deciding whether to administer Luciferium. In order to not completely throw off game balance, the crafting cost is fairly high per unit.
 	
 &lt;b&gt;Research prerequisites:&lt;/b&gt;
  - Medicine Production
  - Component Assembly
 	 
-&lt;b&gt;Crafts at the Drug Lab using:&lt;/b&gt;
- -  2x Advanced Component
- - 10x Uranium
- - 10x Gold
- - 10x Plasteel
+&lt;b&gt;Crafts at the Machining Table using:&lt;/b&gt;
+ - 1x Advanced Component
+ - 5x Uranium
+ - 5x Gold
+ - 5x Plasteel
  
 &lt;b&gt;Skill requirement to craft:&lt;/b&gt;
  - 10 Crafting
  -  8 Medicine
 	 
-&lt;b&gt;VERSION 1.01 Changes:&lt;/b&gt;
+&lt;b&gt;VERSION 1.02 Changes:&lt;/b&gt;
+ - Updated for use with V1.0.0 of RimWorld.
+ - Luciferium now craftable in Machining Table instead of Drug Lab.
+ - Based on user feedback I have reduced the required materials rather heavily.)
+
+ &lt;b&gt;VERSION 1.01 Changes:&lt;/b&gt;
  - Improved mod description (you're reading it).
  - Removed some random comments left behind from earlier.
  - Unfinished luciferium now looks like luciferium rather than an unfinished component.
