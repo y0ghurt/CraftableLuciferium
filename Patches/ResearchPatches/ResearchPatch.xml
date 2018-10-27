@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ResearchProjectDef[defName="ComponentAssembly"]/researchViewX</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]/researchViewX</xpath>
     <value>
-	  <researchViewX>9</researchViewX>
+	  <researchViewX>9.90</researchViewX>
 	</value>
   </Operation>
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ResearchProjectDef[defName="ComponentAssembly"]/researchViewY</xpath>
+    <xpath>Defs/ResearchProjectDef[defName="AdvancedFabrication"]/researchViewY</xpath>
     <value>
-	  <researchViewY>2.9</researchViewY>
+	  <researchViewY>1.25</researchViewY>
 	</value>
   </Operation>
 </Patch>

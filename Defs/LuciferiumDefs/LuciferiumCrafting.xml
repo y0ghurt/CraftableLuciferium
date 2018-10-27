@@ -8,7 +8,7 @@
 	<baseCost>6000</baseCost>
 	<techLevel>Industrial</techLevel>
     <prerequisites>
-	  <li>ComponentAssembly</li>
+	  <li>AdvancedFabrication</li>
 	  <li>MedicineProduction</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -47,7 +47,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>AdvancedComponent</li>
+            <li>ComponentSpacer</li>
           </thingDefs>
         </filter>
         <count>1</count>

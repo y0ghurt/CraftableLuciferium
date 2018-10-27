@@ -11,7 +11,7 @@ This mod makes the drug Luciferium craftable. Access was always the biggest dete
 	
 &lt;b&gt;Research prerequisites:&lt;/b&gt;
  - Medicine Production
- - Component Assembly
+ - Advanced Fabrication
 	 
 &lt;b&gt;Crafts at the Machining Table using:&lt;/b&gt;
  - 1x Advanced Component
@@ -26,7 +26,9 @@ This mod makes the drug Luciferium craftable. Access was always the biggest dete
 &lt;b&gt;VERSION 1.02 Changes:&lt;/b&gt;
  - Updated for use with V1.0.0 of RimWorld.
  - Luciferium now craftable in Machining Table instead of Drug Lab.
- - Based on user feedback I have reduced the required materials rather heavily.)
+ - Based on user feedback I have reduced the required materials rather heavily.
+ - Since research has changed a bit with the new version of RimWorld, Luciferium Crafting now requires Advanced Fabrication.
+ - Made some other changes to comply with updates made after 1.01 went live.
 
  &lt;b&gt;VERSION 1.01 Changes:&lt;/b&gt;
  - Improved mod description (you're reading it).
