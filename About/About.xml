@@ -3,17 +3,20 @@
 <ModMetaData>
   <name>Craftable Luciferium</name>
   <author>Y0ghurt</author>
-  <targetVersion>1.0.0</targetVersion>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
   <url>https://github.com/y0ghurt/CraftableLuciferium</url>
   <description>
-&lt;b&gt;V1.02&lt;/b&gt;
-This mod makes the drug Luciferium craftable. Access was always the biggest deterrent for me when deciding whether to administer Luciferium. In order to not completely throw off game balance, the crafting cost is fairly high per unit.
+&lt;b&gt;V1.03&lt;/b&gt;
+This mod makes the drug Luciferium craftable. Access was always the biggest deterrent for me when deciding whether to administer Luciferium. In order to not completely throw off game balance, the crafting cost is fairly high per unit. As of V1.03 it is now possible to remove Luciferium addiction. The process, however, is rather volatile and may cause unintended health issues.
+
 	
-&lt;b&gt;Research prerequisites:&lt;/b&gt;
+&lt;b&gt;Luciferium Crafting research prerequisites:&lt;/b&gt;
  - Medicine Production
  - Advanced Fabrication
 	 
-&lt;b&gt;Crafts at the Machining Table using:&lt;/b&gt;
+&lt;b&gt;Luciferium crafts at the Machining Table using:&lt;/b&gt;
  - 1x Advanced Component
  - 5x Uranium
  - 5x Gold
@@ -22,6 +25,27 @@ This mod makes the drug Luciferium craftable. Access was always the biggest dete
 &lt;b&gt;Skill requirement to craft:&lt;/b&gt;
  - 10 Crafting
  -  8 Medicine
+
+
+&lt;b&gt;Nanite extraction research prerequisites:&lt;/b&gt;
+ - Luciferium Crafting
+
+&lt;b&gt;Luciferium Extraction Device crafts at the Fabrication Table using:&lt;/b&gt;
+ - 2x  Advanced Component
+ - 10x Component
+ - 50x Uranium
+ - 2x  Simple Prosthetic Arm
+ - 1x  EMP Grenade
+ 
+&lt;b&gt;Skill requirement to craft:&lt;/b&gt;
+ - 10 Crafting
+
+
+&lt;b&gt;VERSION 1.03 Changes:&lt;/b&gt;
+ - Updated the supported version tag to avoid warnings in log.
+ - Introduced the Luciferium Extraction Device.
+ - Introduced the medical operation Extract Nanites, which will end Luciferium addiction if successful.
+ - Please note that attempting to extract luciferium from a pawn that is missing several extremities may prove fatal.
 	 
 &lt;b&gt;VERSION 1.02 Changes:&lt;/b&gt;
  - Updated for use with V1.0.0 of RimWorld.
@@ -38,3 +62,46 @@ This mod makes the drug Luciferium craftable. Access was always the biggest dete
  - &lt;i&gt;Cried because I am now hooked on modding.&lt;/i&gt;
   </description>
 </ModMetaData>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticArm</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Weapon_GrenadeEMP</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
