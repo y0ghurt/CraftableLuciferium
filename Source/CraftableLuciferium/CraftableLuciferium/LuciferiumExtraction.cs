@@ -18,14 +18,21 @@ namespace CraftableLuciferium
 
         public BodyPartRecord GetPart(Pawn pawn)
         {
-            BodyPartDef partDef;
+            //BodyPartDef partDef;
             Random random = new Random();
-            List<BodyPartDef> tried = new List<BodyPartDef>();
+            List<BodyPartDef> partDefs = new List<BodyPartDef>();
             for (int retries = 0; retries < 16; retries++)
             {
-                bool firstRun = true;
-                partDef = new BodyPartDef();
-                while (firstRun || tried.Contains(partDef)) {
+                //bool firstRun = true;
+                //partDef = new BodyPartDef();
+                partDefs.Add(BodyPartDefOf.Leg);
+                partDefs.Add(BodyPartDefOf.Hand);
+                partDefs.Add(BodyPartDefOf.Arm);
+                partDefs.Add(BodyPartDefOf.Eye);
+                partDefs.Add(BodyPartDefOf.Jaw);
+
+                /*
+                while (firstRun || partDefs.Contains(partDef)) {
                     firstRun = false;
                     int partIndex = random.Next(101);
                     //Log.Message("Trying partIndex = " + partIndex);
@@ -50,16 +57,20 @@ namespace CraftableLuciferium
                         partDef = BodyPartDefOf.Jaw;
                     }
                 }
-                tried.Add(partDef);
+                partDefs.Add(partDef);
+                */
 
                 IEnumerable<BodyPartRecord> bodyPartRecordList = pawn.health.hediffSet.GetNotMissingParts();
                 List<BodyPartRecord> selectedBodyParts = new List<BodyPartRecord>();
                 foreach (BodyPartRecord record in bodyPartRecordList)
                 {
-                    if (record.def.Equals(partDef))
+                    foreach (BodyPartDef partDef in partDefs)
                     {
-                        selectedBodyParts.Add(record);
-                        //   return record;
+                        if (record.def.Equals(partDef))
+                        {
+                            selectedBodyParts.Add(record);
+                            //   return record;
+                        }
                     }
                 }
                 int bodyPartsCount = selectedBodyParts.Count;
@@ -151,24 +162,30 @@ namespace CraftableLuciferium
                 }
             }
 
-            DamageDef damageType = DamageDefOf.Bomb;
-            int damageDealt = 99999;
-            Random random = new Random();
-            int injuries = random.Next(1, 6);
             BodyPartRecord bodyPartRecord;
+            DamageDef damageType = DamageDefOf.Bomb;
+            Random random = new Random();
+            int damageDealt = 99999;
+            int injuries = random.Next(1, 6);
             for (int i = 0; i < injuries; i++)
             {
                 if (!pawn.health.Dead)
                 {
                     bodyPartRecord = GetPart(pawn);
+                    //Log.Message(bodyPartRecord.Label);
                     pawn.TakeDamage(new DamageInfo(damageType, damageDealt, -1f, -1f, billDoer, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown));
-                    if (bodyPartRecord.Label.Equals("Brain"))
+                    if (pawn.health.hediffSet.GetBrain() == null || bodyPartRecord.Label.Equals("brain"))
                     {
                         i = 10000000;
+                        break;
                     }
                 }
+                else
+                {
+                    //Log.Message("In the else");
+                    break;
+                }
             }
-            //pawn.health.RemoveHediff(AddictionUtility.FindAddictionHediff(pawn, DefDatabase<ChemicalDef>.GetNamed("Luciferium")));
         }
 
         public override string GetLabelWhenUsedOn(Pawn pawn, BodyPartRecord part)

@@ -15,8 +15,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>10</researchViewX>
-    <researchViewY>1.5</researchViewY>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>1.65</researchViewY>
   </ResearchProjectDef>
   
   <ThingDef ParentName="UnfinishedBase">
