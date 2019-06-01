@@ -33,7 +33,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>LuciferiumExtractionDevice</defName>
     <label>luciferium extraction device</label>
-    <description>A device to "safely" deactivate and extract luciferium nanites from a living subject.</description>
+    <description>A device to "safely" deactivate and extract luciferium nanites from a living subject. In theory an EMP pulse should temporarily disable the nanites, however they do have some tampering protection that could theoretically complicate the process...</description>
     <graphicData>
       <texPath>Things/Item/LuciferiumExtractionDevice</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -199,7 +199,7 @@
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>ExtractNanites</defName>
     <label>extract nanites</label>
-    <description>Extracts nanites.</description>
+    <description>In theory an EMP pulse should temporarily disable the nanites, allowing for safe extraction. Luciferium nanites, however, do have some tampering protection that could theoretically complicate the process...</description>
     <workerClass>CraftableLuciferium.LuciferiumExtraction</workerClass>
     <jobString>Extracting nanites.</jobString>
     <successfullyRemovedHediffMessage>{0} has successfully extracted {1}'s luciferium nanites.</successfullyRemovedHediffMessage>
