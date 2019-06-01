@@ -158,11 +158,14 @@ namespace CraftableLuciferium
             BodyPartRecord bodyPartRecord;
             for (int i = 0; i < injuries; i++)
             {
-                bodyPartRecord = GetPart(pawn);
-                pawn.TakeDamage(new DamageInfo(damageType, damageDealt, -1f, -1f, billDoer, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown));
-                if(bodyPartRecord.Label.Equals("Brain"))
+                if (!pawn.health.Dead)
                 {
-                    i = 10000000;
+                    bodyPartRecord = GetPart(pawn);
+                    pawn.TakeDamage(new DamageInfo(damageType, damageDealt, -1f, -1f, billDoer, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown));
+                    if (bodyPartRecord.Label.Equals("Brain"))
+                    {
+                        i = 10000000;
+                    }
                 }
             }
             //pawn.health.RemoveHediff(AddictionUtility.FindAddictionHediff(pawn, DefDatabase<ChemicalDef>.GetNamed("Luciferium")));
