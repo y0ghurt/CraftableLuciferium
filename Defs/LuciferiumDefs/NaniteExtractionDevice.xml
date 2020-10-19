@@ -127,7 +127,7 @@
     <label>make luciferium extraction device</label>
     <description>Make a luciferium extraction device.</description>
     <jobString>Making luciferium extraction device.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>10000</workAmount>
