@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>LuciferiumCrafting</defName>
+    <label>luciferium crafting</label>
+	<description>Allows you to create Luciferium at the Machining Table.</description>
+	<baseCost>6000</baseCost>
+	<techLevel>Industrial</techLevel>
+    <prerequisites>
+	  <li>AdvancedFabrication</li>
+	  <li>MedicineProduction</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14.00</researchViewX>
+    <researchViewY>1.65</researchViewY>
+  </ResearchProjectDef>
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedLuciferium</defName>
+    <label>unfinished luciferium</label>
+    <graphicData>
+      <texPath>Things/Item/Drug/Luciferium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>MakeLuciferium</defName>
+    <label>make luciferium</label>
+    <description>Make luciferium.</description>
+    <jobString>Making luciferium.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>9000</workAmount>
+    <unfinishedThingDef>UnfinishedLuciferium</unfinishedThingDef>
+	<researchPrerequisite>LuciferiumCrafting</researchPrerequisite>
+	<recipeUsers>
+		<li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Luciferium>1</Luciferium>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+	  <Medicine>8</Medicine>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>
